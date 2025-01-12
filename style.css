@@ -12,6 +12,8 @@ body{
 .container{
     width: 80%;
 }
+
+/* header part css start */
 .header{
     position: fixed;
     height: 60px;
@@ -27,6 +29,7 @@ body{
 }
 .logo{
     font-size: 25px;
+    text-transform: uppercase;
     color: white;
     text-decoration: none;
     font-weight: 500px;
@@ -40,7 +43,8 @@ body{
     right: 0;
     width: 100%;
     height:100%;
-    animation: showright 1s ease forwards;
+    background: #00abf0;
+    animation: showright 2s ease-in-out forwards;
     animation-delay: .4s;
 }
 @keyframes showright {
@@ -59,6 +63,10 @@ body{
 .navbar a:hover{
     color: #081b29;
 }
+/* header part css end */
+
+
+
 /* hero area css start */
 .banner{
     display: flex;
@@ -103,7 +111,7 @@ body{
     margin: 20px 0px 40px ;
     color: white;
 }
-/* btn css */
+/* hero btn css */
 .btn {
     display: flex;
     justify-content: space-between;
@@ -199,6 +207,9 @@ body{
 .heroicon a:hover::before{
     width: 100%;
 }
+/* hero part css end */
+
+
 /* about part css start */
 .aboutpart{
     height: 50vh;
@@ -214,6 +225,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* about item 1 */
 .item1{
     height: 500px;
     width: 50%;
@@ -272,7 +284,7 @@ body{
 .resume a:hover::before{
     width: 100%;
 }
-
+/* about item2 */
 .item2{
     height: 500px;
     width: 50%;
@@ -370,6 +382,7 @@ body{
     color: white;
 }
 
+/* left side css  */
 .leftside{
     display:block ;
     width: 50%;
