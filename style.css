@@ -54,11 +54,17 @@ body{
     text-decoration: none;
     font-weight: 300px;
     margin-left: 35px;
+    transition: .4s;
 }
-.navbar a:hover, .navbar a.home{
+.navbar a:hover{
     color: #081b29;
 }
 /* hero area css start */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .heroarea{
     height: 100vh;
     display: flex;
@@ -66,7 +72,7 @@ body{
     padding: 0 10%;
 }
 .herocontent{
-    width: 400px;
+    width: 600px;
 }
 .herocontent h1{
     font-size: 48px;
@@ -197,8 +203,11 @@ body{
 .aboutpart{
     height: 50vh;
     width: 100%;
-    background: #00abf0;
-    opacity: 0.9;
+    background:;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
 }
 .aboutcontent{
     display: flex;
@@ -219,47 +228,48 @@ body{
 .img img{
     height: 300px;
     width: 300px;
+    background: #00abf0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid #00abf0;
+    box-shadow: inset 0 0 100px #081b29;
     border-radius: 100%;
 }
-.msg{
+.resume{
     display: flex;
     justify-content: center;
     align-items: center;  
 }
-.msg a{
+.resume a{
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 50px;
-    background: #081b29;
-    border: 2px solid #081b29;
+    background: #00abf0;
+    border: 2px solid #00abf0;
     border-radius: 8px;
     font-size: 19px;
-    color: #edf0f1;
+    color: white;
     text-decoration: none;
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
     transition: .5s;
 }
-.msg a::before{
+.resume a::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: #00abf0;
+    background: #081b29;
     z-index: -1;
     transition: .5s;
 }
-.msg a:hover::before{
+.resume a:hover::before{
     width: 100%;
 }
 
@@ -267,7 +277,6 @@ body{
     height: 500px;
     width: 50%;
     margin: 0px 100px;
-
     color: white;
 }
 .aboutright{
@@ -450,19 +459,7 @@ body{
     width: 30%;
     height: 100%;
 }
-.center{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 40%;
-    height: 100%;
-}
-.menus a{
-    justify-content: space-between;
-    color: white;
-    text-decoration: none;
-    padding: 0px 10px;
-}
+
 .right{
     display: flex;
     justify-content: space-evenly;
